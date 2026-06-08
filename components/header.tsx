@@ -28,7 +28,7 @@ export default function Header() {
             <div className="mx-auto text-amber-950">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3 text-amber-950">
-                        <img src="/Logo.jpg" alt="Logo da empresa" width={150} height={90} className="rounded" />
+                        <img src="/Logobg2.jpg" alt="Logo da empresa" width={150} height={90} className="rounded" />
                     </div>
                     <div className="hidden md:flex flex-col items-end gap-3">
                         <div className="flex items-center gap-3">
