@@ -1,12 +1,11 @@
+import HeroCTA from "@/components/HeroCTA";
+import ServicesSection from "@/components/ServicesSection";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-       <div className="text-amber-300 items-center justify-center">
-      <h1 className=" mt-40 items-center justify-center">Bem vindo, Agente!</h1>
-      <p> Junte-se a nós e faça com que as missões impossíveis se tornem possíveis! </p>
-       </div>
-      </main>
-    </div>
+    <main className="flex w-full flex-1 flex-col font-sans">
+      <HeroCTA />
+      <ServicesSection />
+    </main>
   );
 }

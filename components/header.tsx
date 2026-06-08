@@ -30,7 +30,23 @@ export default function Header() {
                     <div className="flex items-center gap-3 text-amber-950">
                         <img src="/Logo.jpg" alt="Logo da empresa" width={150} height={90} className="rounded" />
                     </div>
-                    <Nav />
+                    <div className="hidden md:flex flex-col items-end gap-3">
+                        <div className="flex items-center gap-3">
+                            <a
+                                href="/paginas/login"
+                                className="rounded-md border border-amber-700 px-4 py-2 text-sm font-semibold text-amber-950 transition-colors hover:bg-amber-300/60"
+                            >
+                                Entrar
+                            </a>
+                            <a
+                                href="/paginas/cadastro"
+                                className="rounded-md bg-amber-700 px-4 py-2 text-sm font-semibold text-amber-50 transition-colors hover:bg-amber-800"
+                            >
+                                Cadastre-se
+                            </a>
+                        </div>
+                        <Nav />
+                    </div>
                     <button
                         className="flex md:hidden min-h-11 min-w-11 items-center"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -57,6 +73,22 @@ export default function Header() {
                                 <a href="/paginas/sobre" className="text-amber-950" onClick={fecharMenu}>Sobre a empresa</a>
                                 <a href="/sistema/paginas/curriculos" className="text-amber-950" onClick={fecharMenu}>Lista de Currículos</a>
                                 <a href="/sistema/paginas/curriculos/buscar" className="text-amber-950" onClick={fecharMenu}>Currículo</a>
+                                <div className="mt-4 flex flex-col gap-3 border-t border-amber-700/30 pt-4">
+                                    <a
+                                        href="/paginas/login"
+                                        className="rounded-md border border-amber-700 px-4 py-2 text-center text-sm font-semibold text-amber-950"
+                                        onClick={fecharMenu}
+                                    >
+                                        Entrar
+                                    </a>
+                                    <a
+                                        href="/paginas/cadastro"
+                                        className="rounded-md bg-amber-700 px-4 py-2 text-center text-sm font-semibold text-amber-50"
+                                        onClick={fecharMenu}
+                                    >
+                                        Cadastre-se
+                                    </a>
+                                </div>
                             </nav>
                         </div>
                     </div>
