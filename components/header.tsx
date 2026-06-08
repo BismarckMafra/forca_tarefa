@@ -30,20 +30,22 @@ export default function Header() {
                     <div className="flex items-center gap-3 text-amber-950">
                         <img src="/Logo.jpg" alt="Logo da empresa" width={150} height={90} className="rounded" />
                     </div>
-                    <Nav />
-                    <div className="hidden md:flex items-center gap-3">
-                        <a
-                            href="/paginas/login"
-                            className="rounded-md border border-amber-700 px-4 py-2 text-sm font-semibold text-amber-950 transition-colors hover:bg-amber-300/60"
-                        >
-                            Entrar
-                        </a>
-                        <a
-                            href="/paginas/cadastro"
-                            className="rounded-md bg-amber-700 px-4 py-2 text-sm font-semibold text-amber-50 transition-colors hover:bg-amber-800"
-                        >
-                            Cadastre-se
-                        </a>
+                    <div className="hidden md:flex flex-col items-end gap-3">
+                        <div className="flex items-center gap-3">
+                            <a
+                                href="/paginas/login"
+                                className="rounded-md border border-amber-700 px-4 py-2 text-sm font-semibold text-amber-950 transition-colors hover:bg-amber-300/60"
+                            >
+                                Entrar
+                            </a>
+                            <a
+                                href="/paginas/cadastro"
+                                className="rounded-md bg-amber-700 px-4 py-2 text-sm font-semibold text-amber-50 transition-colors hover:bg-amber-800"
+                            >
+                                Cadastre-se
+                            </a>
+                        </div>
+                        <Nav />
                     </div>
                     <button
                         className="flex md:hidden min-h-11 min-w-11 items-center"
