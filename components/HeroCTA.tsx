@@ -10,7 +10,7 @@ export default function HeroCTA() {
       />
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-700/30 bg-amber-200/60 px-4 py-1.5 text-sm font-medium text-amber-950">
+        <span className="mb-6 mt-12 inline-flex items-center gap-2 rounded-full border border-amber-700/30 bg-amber-200/60 px-4 py-1.5 text-sm font-medium text-amber-950">
           <Target size={16} />
           Gestão de tarefas para missões impossíveis
         </span>
